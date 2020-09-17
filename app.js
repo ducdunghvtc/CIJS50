@@ -19,12 +19,12 @@
 
 
 // thuật toán cho 1 mảng gồm các phần tử nhập vào. hãy xoá những phần tử trùng nhau
-// let number = [1, 2, 3, 2, 4, 1 , 5 , 4 , 6];
-// function dupNumber(data) {
+ let number = [1, 2, 3, 2, 4, 1 , 5 , 4 , 6];
+ function dupNumber(data) {
         
-//        return [...new Set(data)]
+       return [...new Set(data)]
                 
-// }
+}
 // console.log(dupNumber(number));
 
 // let dupNumber = number.filter((item, index) => number.indexOf(item) == index);
