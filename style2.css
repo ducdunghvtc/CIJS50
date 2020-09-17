@@ -1,0 +1,51 @@
+
+
+.trafficlight{
+    width: 100px;
+    height: 300px;
+    background-color: #434343;
+    margin: 10px auto 0px auto;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.timer{
+    position: absolute;
+    width: 60px;
+    height: 100px;
+    left: 500px;
+    top: 150px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.timer .num{
+
+    text-align: center;
+    font-size:45px;
+    background-color: #555555;
+    border-radius: 20px;
+}
+
+.lamp{
+    border-radius: 100%;
+    width: 80; 
+    height: 80;
+    padding: 45px;
+    margin: 5px;
+}
+
+.lamp.red{
+    background-color: red;
+    opacity: 0.2;
+}
+
+.lamp.yellow{
+    background-color: yellow;
+    opacity: 0.2;
+}
+
+.lamp.green{
+    background-color: green;
+    opacity: 0.2;
+}
