@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function checkstring(str1,str2){
+            let dem1 = []
+            let dem2 = []
+            for(let i = 0; i <= 26; i++){
+                dem1[i] = 0
+                dem2[i] = 0       
+            }
+            if(str1.length != str2.length){
+                return false
+            }
+            for (let i = 0; i < str1.length; i++) {
+                // charCodeAt() - trả về giá trị Unicode của một ký tự tại vị trí xác định trong chuỗi
+                // nếu i = 0 thì giá trị Unicode của ký tự đầu tiên sẽ đc trả về
+                dem1[str1.charCodeAt(i) - 97]++
+                dem2[str2.charCodeAt(i) - 97]++
+            }
+            for (let i = 0; i <= 26; i++){
+                if(dem1[i] != dem2[i]){
+                    return false
+                }            
+            }
+            return true
+        }
+        console.log(checkstring("dung","dugn"))
+        console.log(checkstring("abxo","abxk"))
+        console.log(checkstring("abxds","abb"))
+
+
+    </script>
+</body>
+</html>
