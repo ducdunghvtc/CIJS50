@@ -1,6 +1,6 @@
 
-import {Test,AddNewTest} from "./test.js";
-import {Questions,MultipleChoice,Essay,AddNewQuest} from "./quest.js";
+import {AddNewTest} from "./test.js";
+import {AddNewQuest} from "./quest.js";
 
 let arr1 = []
 let arr2 = []
