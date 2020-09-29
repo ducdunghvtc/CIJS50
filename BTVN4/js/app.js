@@ -31,9 +31,7 @@ while(true){
     else if ( type == '6'){
         management.showBook()
     }
-    else if (type == '7'){
-        management.addBook()
-    }
+
     else if (type == '8'){
         break
     }
