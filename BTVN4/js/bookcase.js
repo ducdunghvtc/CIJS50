@@ -3,7 +3,7 @@ export class BookCase {
     max_number_books
     books_name
     dateModified
-    constructor(id,max_number_books,books){
+    constructor(id,max_number_books,books_name){
         this.id = id
         this.max_number_books = max_number_books
         this.books_name = books_name
@@ -27,7 +27,7 @@ export class AddNewBookCase {
     updateBookcase(){
         let index = prompt("Enter ID you want to update");
         let update = prompt("Enter bookcase you want to update");
-        this.bookcase[index - 1] = edit
+        this.bookcase[index - 1] = update
 
     }
     deleteBookcase(){
