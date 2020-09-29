@@ -19,9 +19,7 @@ export class AddNewBookCase {
         let id = prompt('Enter new id')
         let max_number_books = prompt('Enter maximum number of books contained')
         let books_name = prompt('Enter books ')
-        let category = prompt('Enter category')
-        let author = prompt('Enter author')
-        let Bookcase = new BookCase(id,max_number_books,books_name,author,category)
+        let Bookcase = new BookCase(id,max_number_books,books_name)
         this.bookcase.push(Bookcase)
     }
     updateBookcase(){
