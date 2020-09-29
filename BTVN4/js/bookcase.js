@@ -46,6 +46,13 @@ export class AddNewBookCase {
             console.log(this.bookcase[i][property]);
         }
     }
+    addBook(){
+        let books_name = prompt('Enter books name you want to add')
+        let author = prompt('Enter author')
+        let category = prompt('Enter category')
+        let newbooks = new Book(books_name,author,category)
+        this.books.push(newbooks)
+    }
     showBook(){
         for(let i = 0; i < this.bookcase.length; i++){
             console.log(this.bookcase[i]["books"]);
