@@ -10,8 +10,9 @@ while(true){
          3-delete bookcase
          4-edit bookcase
          5-find book
-         6-show books)
-         7-end`)
+         6-show books
+         7-add books
+         8-end`)
     if(type == '1'){
         management.addBookcase()
     }
@@ -31,6 +32,9 @@ while(true){
         management.showBook()
     }
     else if (type == '7'){
+        management.addBook()
+    }
+    else if (type == '8'){
         break
     }
 }
