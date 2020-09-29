@@ -2,11 +2,15 @@ export class BookCase {
     id
     max_number_books
     books_name
+    author
+    category
     dateModified
-    constructor(id,max_number_books,books_name){
+    constructor(id,max_number_books,books_name,author,category){
         this.id = id
         this.max_number_books = max_number_books
         this.books_name = books_name
+        this.author = author
+        this.category = category
         this.dateModified = new Date().toISOString()
     }
 }
@@ -19,13 +23,16 @@ export class AddNewBookCase {
         let id = prompt('Enter new id')
         let max_number_books = prompt('Enter maximum number of books contained')
         let books_name = prompt('Enter books ')
-        let Bookcase = new BookCase(id,max_number_books,books_name)
+        let category = prompt('Enter category')
+        let author = prompt('Enter author')
+        let Bookcase = new BookCase(id,max_number_books,books_name,author,category)
         this.bookcase.push(Bookcase)
     }
     updateBookcase(){
         let index = prompt("Enter ID you want to update");
         let update = prompt("Enter bookcase you want to update");
-        this.bookcase[index - 1] = update
+        let property = prompt("Enter property you want to find");
+        this.bookcase[index - 1][property] = update
 
     }
     deleteBookcase(){
@@ -44,16 +51,10 @@ export class AddNewBookCase {
             console.log(this.bookcase[i][property]);
         }
     }
-    addBook(){
-        let books_name = prompt('Enter books name you want to add')
-        let author = prompt('Enter author')
-        let category = prompt('Enter category')
-        let newbooks = new Book(books_name,author,category)
-        this.books_name.push(newbooks)
-    }
+
     showBook(){
         for(let i = 0; i < this.bookcase.length; i++){
-            console.log(this.bookcase[i]["books"]);
+            console.log(this.bookcase[i]["books_name"]);
         }
     }
 }
