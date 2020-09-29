@@ -22,7 +22,7 @@ while(true){
         management.deleteBookcase()
     }
     else if (type == '4'){
-        management.editBookcase()
+        management.updateBookcase()
     }
     else if (type == '5'){
         management.findBook()
